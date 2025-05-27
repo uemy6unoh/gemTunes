@@ -1,0 +1,24 @@
+[
+  {
+    "user": "U001",
+    "id": "guest1",
+    "pw": "11111",
+    "pl_name": "감성플리다",
+    "pl_genre": [],
+    "pl_array": [],
+    "pl_cmt": {},
+    "zzim_list": []
+  },
+  {
+    "user": "U002",
+    "id": "hihi",
+    "pw": "22222",
+    "pl_name": "kiki",
+    "pl_genre": [],
+    "pl_array": [
+      "101901"
+    ],
+    "pl_cmt": {},
+    "zzim_list": []
+  }
+]

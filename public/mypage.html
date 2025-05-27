@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>마이페이지 - GemTunes</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+</head>
+
+<body>
+    <nav>
+        <button onclick="location.href='/'">홈</button>
+        <button onclick="logout()">로그아웃</button>
+    </nav>
+
+    <main>
+        <!-- 1) 제목 표시 + 수정 버튼 -->
+        <div id="playlist-title-section">
+            <h2 id="playlist-title-display"></h2>
+            <button id="edit-playlist-name-btn">수정</button>
+        </div>
+    
+        <!-- 2) 수정 모드: input + 저장 버튼 (초기 숨김) -->
+        <div id="playlist-title-edit" style="display: none;">
+            <input type="text" id="playlist-name-input" />
+            <button id="save-playlist-name-btn">저장</button>
+        </div>
+    
+        <!-- 3) 현재 플레이리스트 곡 목록 -->
+        <ul id="playlist-list"></ul>
+    
+        <!-- 4) 노래 추가 UI -->
+        <section id="add-song">
+            <h3>노래 추가</h3>
+            <input type="text" id="artist-input" placeholder="가수명" />
+            <input type="text" id="title-input" placeholder="곡 제목" />
+            <button id="add-song-btn">추가</button>
+        </section>
+    </main>
+      
+
+    <script src="mypage.js"></script>
+</body>
+
+</html>

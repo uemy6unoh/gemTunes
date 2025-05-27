@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GemTunes</title>
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+  <body>
+    <header>
+    <nav>
+      <h1 class="logo">당신의 음악을 공유해보세요!</h1>
+      <div>
+        <button onclick="openAuthModal()">로그인 / 회원가입</button>
+        <button id="logout-btn" style="display: none;" onclick="logout()">로그아웃</button>
+
+        <!-- 로그인/회원가입 통합 모달 -->
+        <div id="auth-modal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeAuthModal()">&times;</span>
+            <h2 id="modal-title">로그인</h2>
+            
+            <label>아이디:</label><br>
+            <input type="text" id="auth-id"><br>
+            <label>비밀번호:</label><br>
+            <input type="password" id="auth-password"><br><br>
+
+            <!-- 버튼 역할 분리 -->
+            <button onclick="login()">로그인</button>
+            <button onclick="signup()">회원가입</button>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+    <div class="header-content">
+      <h2>GemTunes</h2>
+      <h3>보석 같은 명곡을 찾을 수 있는 사이트</h3>
+      <form class="search">
+        <input type="search" placeholder="아티스트명" required>
+        <button type="button">검색</button>
+        <p>장르 선택</p>
+        <label class="inline"><input type="checkbox" name="Genre" value="pop">팝(Pop)</label>
+        <label class="inline"><input type="checkbox" name="Genre" value="r&b">R&B</label>
+        <label class="inline"><input type="checkbox" name="Genre" value="hiphop">힙합</label>
+        <label class="inline"><input type="checkbox" name="Genre" value="dance">댄스</label>
+        <label class="inline"><input type="checkbox" name="Genre" value="band">밴드</label>
+        <label class="inline"><input type="checkbox" name="Genre" value="indie">인디</label>
+        <label class="inline"><input type="checkbox" name="Genre" value="jazz">재즈</label>
+        <label class="inline"><input type="checkbox" name="Genre" value="classic">클래식</label>
+        <label class="inline"><input type="checkbox" name="Genre" value="k-pop">K-Pop</label>
+        <label class="inline"><input type="checkbox" name="Genre" value="ballad">발라드</label>
+      </form>
+    </div>
+    </header>
+    <!-- 사이드바 구현 -->
+    <div id="sidebar">
+      <a id="mypage-link" href="#">마이페이지</a>
+      <a href="wishlist.html" target="_blank">찜한 플리 목록</a>
+    </div>
+      <!-- 선택 가이드 -->
+    <section id="main-play">
+      <h2>최신 플레이리스트</h2>
+      <div class="main-play-content" id="main-playlist">
+      </div>
+    </section> 
+      <!-- 푸터 -->
+    <footer>
+      <div class="footer-content">
+        <div class="col left">
+          <ul class="footer-nav">
+            <li><a href="#">매장안내</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보 취급방침</a></li>
+            <li><a href="#">이용안내</a></li>
+          </ul>
+        </div>
+        <div class="col right">
+          <h2>커뮤니티</h2>
+          <p><a href="#">공지사항</a></p>
+          <p><a href="#">이벤트</a></p>
+          <p><a href="#">상품 Q&A</a></p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; GemTunes</p>
+      </div>
+    </footer>  
+    <script src="script.js"></script>
+  </body>
+</html>
